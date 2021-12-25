@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class Intro extends AppCompatActivity {
 
-    Animation up, down;
+    Animation down;
     TextView textView;
 
     @Override
