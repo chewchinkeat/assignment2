@@ -199,8 +199,10 @@
                         <pl.droidsonroids.gif.GifImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/beginner_level"
-                            />
+                            android:src="@drawable/beginner_level"/>
+                            //Part 3 need change pic
+
+
 
                     </LinearLayout>
 
