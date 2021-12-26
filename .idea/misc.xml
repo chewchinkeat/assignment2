@@ -5,7 +5,22 @@
       <map>
         <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/drawable/btn_shape.xml" value="0.2703125" />
         <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/drawable/crop_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/drawable/exer_start_button.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/drawable/round_button.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/drawable/steps_shape.xml" value="0.2388888888888889" />
         <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_beginner.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise10.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise11.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise12.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise3.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise4.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise5.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise6.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise7.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise8.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise9.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_exercise_info.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_intermediate.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Chia chen/Documents/GitHub/assignment3/app/src/main/res/layout/activity_intro.xml" value="0.25416666666666665" />

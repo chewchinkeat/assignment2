@@ -1,3 +1,74 @@
 <resources>
     <string name="app_name">assignment2</string>
+
+    <string name="exercise1">   1. Stand upright with your legs together, arms at your sides. \n\n
+                                2. Bend your knees slightly, and jump into the air.\n\n
+                                3. As you jump, spread your legs to be about shoulder-width apart. Stretch your arms out and over your head.\n\n
+                                4. Jump back to starting position.\n\n
+                                5. Repeat.
+    </string>
+    <string name="exercise2">   1. Stand upright with your legs together, arms at your sides. \n\n
+                                2. Bend your knees slightly, and jump into the air.\n\n
+                                3. As you jump, spread your legs to be about shoulder-width apart. Stretch your arms out and over your head.\n\n
+                                4. Jump back to starting position.\n\n
+                                5. Repeat.
+    </string>
+    <string name="exercise3">   1. Kneel on the floor.\n\n
+                                2. Extend arms and put hands shoulder-width apart on the floor in front of you.\n\n
+                                3. Tighten abs while you bend arms, lowering your torso until chest grazes the floor.\n\n
+                                4. Push torso back up by straightening arms. Slow and steady.\n\n
+                                5. Rinse and repeat.
+    </string>
+    <string name="exercise4">   1. Lie face down on a mat with your arms stretched above your head. (like Superman)\n\n
+                                2. Raise your right arm and left leg about 5 to 6 inches off the ground (or as far as you comfortably can).\n\n
+                                3. Hold for 3 seconds and relax.\n\n
+                                4. Repeat with the opposite arm and leg.
+    </string>
+    <string name="exercise5">   1. Lie on your back, legs bent and together.\n\n
+                                2. Keep your legs bend and lift them all the way up to the ceiling until your butt comes off the floor.\n\n
+                                3. Slowly lower your legs back down till they’re just above the floor. Hold for a moment.\n\n
+                                4. Raise your legs back up. Repeat.
+    </string>
+    <string name="exercise6">   1. Start with your body in a straight line and your hands slightly wider than shoulder-width apart. Keep your toes and balls of the feet touching the floor.\n\n
+                                2. Bring one knee up toward the center of your stomach and then quickly alternate between legs.\n\n
+                                3. Continue alternating until the set is complete.
+    </string>
+    <string name="exercise7">   1. Stand upright with your legs together, arms at your sides. \n\n
+                                2. Bend your knees slightly, and jump into the air.\n\n
+                                3. As you jump, spread your legs to be about shoulder-width apart. Stretch your arms out and over your head.\n\n
+                                4. Jump back to starting position.\n\n
+                                5. Repeat.
+    </string>
+    <string name="exercise8">   1. Assume a push-up position but bend your arms at your elbows so your weight rests on your forearms.\n\n
+                                2. Tighten your abs, clench your glutes and keep your body straight from head to heels.\n\n
+                                3. Hold as long as you can.
+    </string>
+    <string name="exercise9">   1. Lie on your right side with your legs straight and feet stacked on top of each other. Place your right elbow under your right shoulder with your forearm pointing away from you and your hand balled into a fist. The pinky side of your hand should be in contact with the ground.\n\n
+                                2. With your neck neutral, breathe out and brace your core.\n\n
+                                3. Lift your hips off the mat so that you’re supporting your weight on your elbow and the side of your right foot. Your body should be in a straight line from your ankles to your head.\n\n
+                                4. Hold this position for the duration of the exercise. Depending on your fitness level, aim for between 15 to 60 seconds.\n\n
+                                5. Repeat on your left side.
+    </string>
+    <string name="exercise10">  1. Stand with your feet hip-width apart, keep your back straight, your shoulders back, and your abs tight.\n\n
+                                2. Take a step forward and slowly bend both knees, until your back knee is just above the floor.\n\n
+                                3. Stand back up and repeat the movement.\n\n
+                                4. Alternate legs until the set is complete.
+    </string>
+    <string name="exercise11">  1. Start with your feet wider than your hips and your knees and toes pointing forward.\n\n
+                                2. Shift your weight into your right heel, push your hips back, and bend that knee while leaving your left leg straight.\n\n
+                                3. Then, drive through your right foot to reverse the movement.\n\n
+                                4. Repeat on the other side.
+    </string>
+    <string name="exercise12">  1. Keep your head straight and your neck and jaw muscles relaxed.\n\n
+                                2. Relax your shoulders and keep them back and down.\n\n
+                                3. Bend your arms at a 90° angle and keep your hands relaxed (but not floppy).\n\n
+                                4. Lean forward slightly, without bending at the waist.\n\n
+                                5. Square your hips and keep them stable.
+    </string>
+
+
+
+
+
+
 </resources>
