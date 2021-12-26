@@ -36,6 +36,7 @@ public class BeginnerActivity extends AppCompatActivity {
                 int value = i + 1;
                 Log.i("FIRST", String.valueOf(value));
                 Intent intent = new Intent(BeginnerActivity.this, ExerciseInfo.class);
+                intent.putExtra("value",String.valueOf(value));
                 startActivity(intent);
 
             }
