@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/black"
+        android:background="@drawable/toolbar_color"
         android:textAlignment="textEnd"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:title="FitEx"
@@ -1228,7 +1228,7 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/exercise11"
+                                android:src="@drawable/exercise12"
                                 />
 
 

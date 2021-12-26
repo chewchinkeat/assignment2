@@ -12,11 +12,11 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="#42CA3F"
+        android:background="@drawable/toolbar_color"
         android:textAlignment="textEnd"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         android:title="FitEx"
-        android:titleTextColor="@color/design_default_color_background"
+        android:titleTextColor="#26085C"
         android:gravity="end" />
 
     <ScrollView
@@ -61,10 +61,9 @@
                             android:fontFamily="monospace"
                             android:padding="8dp"
                             android:text="Beginner level"
-                            android:textColor="@color/black"
+                            android:textColor="@color/purple_700"
                             android:textSize="20dp"
-                            android:textStyle="bold"
-                            />
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -81,7 +80,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="Every day 15 minutes"
-                            android:textColor="@color/teal_200"
+                            android:textColor="#052667"
                             android:textStyle="bold"
                             />
 
@@ -97,7 +96,7 @@
                         <pl.droidsonroids.gif.GifImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/beginner_level"
+                            android:src="@drawable/beginner_icon"
                             />
 
                     </LinearLayout>
@@ -163,7 +162,7 @@
                             android:fontFamily="monospace"
                             android:padding="8dp"
                             android:text="Intermediate level"
-                            android:textColor="@color/black"
+                            android:textColor="@color/purple_700"
                             android:textSize="20dp"
                             android:textStyle="bold"
                             />
@@ -183,7 +182,7 @@
                             android:layout_height="wrap_content"
                             android:padding="8dp"
                             android:text="Every day 15 minutes"
-                            android:textColor="@color/teal_200"
+                            android:textColor="#052667"
                             android:textStyle="bold"
                             />
 
@@ -199,7 +198,7 @@
                         <pl.droidsonroids.gif.GifImageView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/beginner_level"/>
+                            android:src="@drawable/intermediate_icon"/>
                             //Part 3 need change pic
 
 
