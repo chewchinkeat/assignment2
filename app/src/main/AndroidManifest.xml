@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment2">
         <activity
+            android:name=".ExerciseInfo2"
+            android:exported="false" />
+        <activity
             android:name=".ExerciseInfo"
             android:exported="false" />
         <activity

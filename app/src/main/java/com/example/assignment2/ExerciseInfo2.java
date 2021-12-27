@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class ExerciseInfo extends AppCompatActivity {
+public class ExerciseInfo2 extends AppCompatActivity {
 
     String button_value;
     Button startbutton;
@@ -35,40 +35,40 @@ public class ExerciseInfo extends AppCompatActivity {
         switch (integervalue){
 
             case 1:
-                setContentView(R.layout.activity_exercise1);
+                setContentView(R.layout.activity_exercisei1);
                 break;
             case 2:
-                setContentView(R.layout.activity_exercise2);
+                setContentView(R.layout.activity_exercisei2);
                 break;
             case 3:
-                setContentView(R.layout.activity_exercise3);
+                setContentView(R.layout.activity_exercisei3);
                 break;
             case 4:
-                setContentView(R.layout.activity_exercise4);
+                setContentView(R.layout.activity_exercisei4);
                 break;
             case 5:
-                setContentView(R.layout.activity_exercise5);
+                setContentView(R.layout.activity_exercisei5);
                 break;
             case 6:
-                setContentView(R.layout.activity_exercise6);
+                setContentView(R.layout.activity_exercisei6);
                 break;
             case 7:
-                setContentView(R.layout.activity_exercise7);
+                setContentView(R.layout.activity_exercisei7);
                 break;
             case 8:
-                setContentView(R.layout.activity_exercise8);
+                setContentView(R.layout.activity_exercisei8);
                 break;
             case 9:
-                setContentView(R.layout.activity_exercise9);
+                setContentView(R.layout.activity_exercisei9);
                 break;
             case 10:
-                setContentView(R.layout.activity_exercise10);
+                setContentView(R.layout.activity_exercisei10);
                 break;
             case 11:
-                setContentView(R.layout.activity_exercise11);
+                setContentView(R.layout.activity_exercisei11);
                 break;
             case 12:
-                setContentView(R.layout.activity_exercise12);
+                setContentView(R.layout.activity_exercisei12);
                 break;
         }
 
@@ -127,7 +127,7 @@ public class ExerciseInfo extends AppCompatActivity {
                 int newvalue = Integer.valueOf(button_value) + 1;
                 if(newvalue <= 12){
 
-                    Intent intent = new Intent(ExerciseInfo.this, ExerciseInfo.class);
+                    Intent intent = new Intent(ExerciseInfo2.this, ExerciseInfo2.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value", String.valueOf(newvalue));
                     startActivity(intent);
@@ -135,7 +135,7 @@ public class ExerciseInfo extends AppCompatActivity {
                 }else{
 
                     newvalue = 1;
-                    Intent intent = new Intent(ExerciseInfo.this, ExerciseInfo.class);
+                    Intent intent = new Intent(ExerciseInfo2.this, ExerciseInfo2.class);
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     intent.putExtra("value", String.valueOf(newvalue));
                     startActivity(intent);

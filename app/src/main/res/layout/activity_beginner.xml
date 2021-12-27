@@ -680,7 +680,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="monospace"
-                                android:text="Alternate Heel Touches"
+                                android:text="Heel Touches"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
                                 android:textSize="15dp"
