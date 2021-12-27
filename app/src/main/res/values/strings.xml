@@ -70,23 +70,232 @@
 
     <string-array name="title_story">
 
-        <item>Title1</item>
-        <item>Title2</item>
-        <item>Title3</item>
-        <item>Title4</item>
-        <item>Title5</item>
-        <item>Title6</item>
+        <item>Build Lean Muscle</item>
+        <item>Lose Fat</item>
+        <item>Improve Metabolism</item>
+        <item>Vegan Diet</item>
+        <item>Low calorie</item>
+        <item>Control BMI</item>
+        <item>Good Eating Habits</item>
+        <item>Having A Good Night Sleep</item>
 
     </string-array>
 
     <string-array name="details">
 
-        <item>content1</item>
-        <item>content2</item>
-        <item>content3</item>
-        <item>content4</item>
-        <item>content5</item>
-        <item>content6</item>
+        <item>  -Eat Lots of nuts\n
+                The very first must-do for the skinny guy/gal is to start snacking on nuts regularly.
+                Nuts are easy to pack and carry around with you and can easily provide a good 300+ calories per handful.\n\n
+
+                -Eat dried fruits\n
+                Another quick trick to help get more calories in is to also opt for dried fruit rather than fresh
+                fruit more often. While fresh fruit is definitely healthy and part of a good muscle-building diet, \n
+                it will fill you up more quickly than dried fruit will.\n\n
+
+                -Eat oats cold\n
+                Oatmeal is a fantastic carbohydrate source that’s recommended in any diet for gaining
+                muscle, but for skinny athletes, they will want to serve this one up cold. Cooked oatmeal
+                takes up far too much room in the stomach and will instantly cause you to feel full, on very
+                few calories.\n\n
+
+                -Eat plenty of lean meat and fatty fish\n
+                lean red meat and fatty varieties of fish are going to be excellent for the skinny guy and gal
+                because they not only provide the protein you need to build more lean muscle mass, but they’re
+                also going to give you some healthy fat as well. This means you’ll take in more calories overall
+                with these choices, moving you closer to your goal to experience safe muscle gain.\n\n
+                While chicken and turkey can also definitely be eaten, make sure to consume
+                higher-calorie protein sources at least a few times per week.\n\n
+
+                -Drink your calories\n
+                The next quick tip for the skinny athlete is to make sure you drink some of your calories.
+                Chocolate or regular milk, protein smoothies for extra nutrients are all terrific options for you.\n\n
+        </item>
+
+
+
+        <item>
+                -Eat plenty of soluble fiber\n
+                Soluble fiber absorbs water and forms a gel that helps slow down food as it passes through
+                your digestive system.\n\n
+
+                -Avoid foods that contain trans fats\n
+                Trans fats are created by pumping hydrogen into unsaturated fats, such as soybean oil.\n\n
+
+                -Don’t drink too much alcohol\n
+                Oatmeal is a fantastic carbohydrate source that’s recommended in any diet for gaining
+                muscle, but for skinny athletes, they will want to serve this one up cold. Cooked oatmeal
+                takes up far too much room in the stomach and will instantly cause you to feel full, on very
+                few calories.\n\n
+
+                -Eat plenty of lean meat and fatty fish\n
+                lean red meat and fatty varieties of fish are going to be excellent for the skinny guy and gal
+                because they not only provide the protein you need to build more lean muscle mass, but they’re
+                also going to give you some healthy fat as well. This means you’ll take in more calories overall
+                with these choices, moving you closer to your goal to experience safe muscle gain.\n\n
+                While chicken and turkey can also definitely be eaten, make sure to consume
+                higher-calorie protein sources at least a few times per week.\n\n
+
+                -Drink your calories\n
+                The next quick tip for the skinny athlete is to make sure you drink some of your calories.
+                Chocolate or regular milk, protein smoothies for extra nutrients are all terrific options for you.\n\n
+        </item>
+
+
+
+        <item>
+                -Eat Plenty of Protein at Every Meal\n
+                Eating food can increase your metabolism for a few hours.
+                This is called the thermic effect of food (TEF). It’s caused by the extra calories required to digest,
+                absorb and process the nutrients in your meal.\n\n
+
+                -Drink More Cold Water\n
+                People who drink water instead of sugary drinks are more successful at losing weight and keeping it off\n
+                Studies have shown that drinking 17 ounces (0.5 liters) of water increases resting metabolism
+                by 10–30% for about an hour\n\n
+
+                -Lift Heavy Things\n
+                Muscle is more metabolically active than fat, and building muscle can help increase your metabolism\n
+                This means you will burn more calories each day, even at rest\n\n
+        </item>
+
+        <item>
+            -Carbohydrates\n
+            Athletes aren’t the only ones who need carbohydrates. A vegan diet is rich in this macronutrient,
+            which means fiber, antioxidant, and phytochemical intake is strong, too.Example food:\n
+            Rice\n
+            white pasta\n
+            white bread\n\n\n
+            Other important foods include:\n
+            Protein: legumes, grains, tofu, quinoa, nuts, seeds, vegetables\n
+            Omega 3 fatty acids: flax seeds, chia seeds, hemp seeds, walnuts, seaweed\n
+            Vitamin B12: nutritional yeast\n
+            Iron: legumes, grains, nuts, seeds, green vegetables\n
+            Zinc: beans, nuts, seeds, oats, nutritional yeast\n
+            Calcium: kale, broccoli, bok choi, beans, almonds, sesame seeds,
+            fortified plant-based milk and juices\n
+            Iodine: seaweed, potatoes, white beans, cranberries, iodized salt\n
+        </item>
+
+        <item>
+            -Berries\n
+            Berries — including strawberries, blueberries, raspberries and blackberries — are loaded with vitamins, minerals and antioxidants that can optimize your health.
+            Their high fiber content also boosts weight loss and reduces hunger.\n
+            For example, 1 cup (148 grams) of  blueberries supplies just 84 calories but packs 3.6 grams of fiber\n\n
+
+            -Eggs\n
+            Eggs are extremely nutrient-dense, as they’re low in calories but rich in many vital nutrients.\n
+            A single large egg has approximately 72 calories, 6 grams of protein and a wide array of important
+            vitamins and minerals.\n
+            In a study in 30 women, those who ate eggs for breakfast instead of a bagel experienced
+            greater feelings of fullness and consumed 105 fewer calories later in the day\n
+            Studies suggest that starting your day with a serving of eggs can reduce hunger and boost fullness.\n\n
+
+            -Legumes\n
+            Because of their high protein and fiber content, legumes such as beans, peas and lentils can be incredibly filling.\n
+            One cup (198 grams) of cooked lentils provides about 230 calories, as well as 15.6 grams of
+            fiber and nearly 18 grams of protein.\n
+            Multiple studies prove that legumes have a powerful effect on hunger and appetite.\n
+            One study in 43 young men noted that a high-protein meal with beans and peas increased feelings of fullness
+            and reduced appetite and hunger more than a high-protein meal with veal and pork
+            Another review of nine studies reported that people felt 31% more full after eating pulses,
+            a type of legume, compared to high-carb meals of pasta and bread\n\n
+
+            -Popcorn\n
+            Thanks to its high fiber content, popcorn tops the charts as one of the most filling low-calorie snacks.\n
+            Though there are only 31 calories in 1 cup (8 grams) of air-popped popcorn, it boasts 1.2 grams of dietary fiber —
+            up to 5% of your daily fiber needs \n
+            Not only does fiber slow your digestive process to promote fullness, but it can also
+            stabilize blood sugar to prevent hunger and cravings .\n\n
+
+
+
+        </item>
+
+        <item>
+            -Track Your Weight Loss Progress Closely\n
+            Know where you stand today — and where you stood yesterday. Then give yourself a pat on the back.
+            “Self-monitoring is really important when it comes to weight control,” says O’Neil.\n\n
+            He recommends recording your food or calorie intake for a few days to understand what
+            your eating habits are truly like. “Many patients will come back and say, ‘I never knew how much I ate,’”
+            he explains.\n\n
+            It may be the reality check you need to change your habits. Use whatever method you feel most comfortable
+            with, whether that’s writing it in a journal or using an app on your smartphone. A February 2019
+            study published in Obesity found that the more frequently participants used a web app to track
+            their diet habits over six months, the more weight they lost.\n\n\n\n
+
+            -Stay Consistent, Even if You Aren’t Seeing Results Right Away\n
+            Even if the weight doesn’t seem like it’s coming off fast enough, stay the course.
+            It’s only with consistent efforts to eat well, move more, and maintain other healthy
+            habits that affect weight (like getting enough sleep) that the pounds come off permanently,
+            research suggests. Researchers found that when weight jumped up and down — possibly because
+            of inconsistent efforts — people were more likely to give up on their goals. Remember: You’ve got this.\n\n\n\n
+
+
+
+        </item>
+
+        <item>
+                -Listen to your body.\n
+                You may not feel full right away, but that doesn’t mean that you
+                should keep eating until you feel uncomfortable.\n\n
+                Eat when you feel hungry, not when you’re bored. Mindless eating when you’re not even
+                hungry leads to an excessive calorie intake of less nutritious foods.\n\n
+                Eat slowly. Focus on the tastes and textures of your food. Enjoy your food rather
+                than inhaling it! Be sure to slow down so that you can feel the hunger go away and feel a comfortable,
+                full feeling take over.\n\n
+                Learn to be mindful while eating. Mindful eating will teach you how to eat
+                when you’re hungry and stop when you’re satisfied. You’ll also learn to genuinely
+                taste your food and enjoy the tastes of healthier foods.\n\n\n\n
+
+
+                -Don’t skip meals\n
+                Skipping meals slows your metabolism and might even make you gain weight.
+                It also causes your blood sugar levels to drop.\n\n
+                Always eat breakfast. Eating a healthy breakfast at a reasonable hour is great for your metabolism
+                and keeps your hunger in check throughout the day.\n\n
+                Keep healthy snacks available at work. Hunger pains at work make it easy to grab a
+                bag of greasy chips from the vending machine. Always stay prepared for hunger at work
+                by keeping nuts, rice cakes, veggie chips or other healthy snacks at your desk. Check out
+                this awesome article by Nutrition Advance for 99 healthy snack ideas!\n\n\n\n
+
+                -Always pay attention to the labels\n
+                Learn to decode nutrition labels. Always check sugar, sodium, saturated fat, and trans fat amounts.\n\n
+                Check the ingredient label. Learn sneaky terms for hidden sugar and other additives. If a
+                food product contains too many ingredients that you can’t pronounce, put it back on the shelf!\n\n\n\n
+</item>
+
+        <item>
+                Foods that help you sleep well\n\n\n\n
+                -Almonds
+                It’s been claimed that almonds may help boost sleep quality as well. \n\n
+                This is because almonds, along with several other types of nuts, are a source of the hormone melatonin.
+                Melatonin regulates your internal clock and signals your body to prepare for sleep\n\n\n\n
+
+
+
+                -Turkey
+                It’s high in proteinThe protein in turkey may also contribute to its
+                ability to promote tiredness. There’s evidence that consuming moderate amounts of
+                protein before bed is associated with better sleep quality, including less waking up throughout the night\n\n\n\n
+
+                -Kiwi
+                Kiwis are a low-calorie and very nutritious fruit\n\n
+                In a 4-week study, 24 adults consumed two kiwifruits one hour before going
+                to bed each night. At the end of the study, participants fell asleep 42% more quickly
+                than when they didn’t eat anything before bedtime.\n\n\n\n
+
+                Several other foods and drinks have sleep-promoting properties. For example, they may contain
+                high amounts of nutrients such as tryptophan.\n\n
+                However, in some cases, there’s little research into their specific effects on sleep.\n\n
+                Dairy products: Dairy products, such as a glass of milk, cottage cheese, and plain yogurt,
+                are known sources of tryptophan. Milk has been shown to improve sleep in older adults,
+                especially when paired with light exercise \n\n
+                Bananas: Banana peels contain tryptophan and the fruit itself is a modest source of magnesium.
+                Both of these properties may help you get a good night’s sleep \n\n
+                Oatmeal: Similar to rice, oatmeal is high in carbs with a bit more fiber and has been reported to
+                induce drowsiness when consumed before bed. Additionally, oats are a known source of melatonin\n\n
+
+        </item>
 
     </string-array>
 
