@@ -1,17 +1,20 @@
 package com.example.assignment2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,10 +49,36 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void setSupportActionBar(Toolbar toolbar) {
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.ellipsis, menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if(id == R.id.share){
+            return true;
+        }
 
+        if(id == R.id.rate){
+            return true;
+        }
+
+        if(id == R.id.moreapps){
+            return true;
+        }
+
+        if(id == R.id.term){
+            return true;
+        }
+
+        if(id == R.id.privacy){
+            return true;
+        }
+        return true;
     }
 
     public void beginner_level(View view) {

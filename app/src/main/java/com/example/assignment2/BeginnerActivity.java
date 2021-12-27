@@ -1,11 +1,14 @@
 package com.example.assignment2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 public class BeginnerActivity extends AppCompatActivity {
@@ -26,6 +29,37 @@ public class BeginnerActivity extends AppCompatActivity {
                 R.id.exercise7_pose,R.id.exercise8_pose,R.id.exercise9_pose,R.id.exercise10_pose,R.id.exercise11_pose,R.id.exercise12_pose,
 
         };
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.ellipsis, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if(id == R.id.share){
+            return true;
+        }
+
+        if(id == R.id.rate){
+            return true;
+        }
+
+        if(id == R.id.moreapps){
+            return true;
+        }
+
+        if(id == R.id.term){
+            return true;
+        }
+
+        if(id == R.id.privacy){
+            return true;
+        }
+        return true;
     }
 
     public void Imagebuttonclicked(View view) {
