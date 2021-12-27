@@ -68,5 +68,27 @@
                                 5. Square your hips and keep them stable.
     </string>
 
+    <string-array name="title_story">
+
+        <item>Title1</item>
+        <item>Title2</item>
+        <item>Title3</item>
+        <item>Title4</item>
+        <item>Title5</item>
+        <item>Title6</item>
+
+    </string-array>
+
+    <string-array name="details">
+
+        <item>content1</item>
+        <item>content2</item>
+        <item>content3</item>
+        <item>content4</item>
+        <item>content5</item>
+        <item>content6</item>
+
+    </string-array>
+
 
 </resources>
