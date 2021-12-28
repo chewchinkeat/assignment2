@@ -98,14 +98,14 @@ public class MainActivity extends AppCompatActivity {
 
         if(id == R.id.term){
 
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://fitextermsandconditions.blogspot.com/2021/12/fitex-terms-and-conditions.html"));
             startActivity(intent);
             return true;
         }
 
         if(id == R.id.privacy){
 
-            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://fitexprivacypolicies.blogspot.com/2021/12/privacy-policy-fitex-is-provided-by-llc.html"));
             startActivity(intent);
             return true;
         }
