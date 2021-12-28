@@ -24,7 +24,7 @@
 
             <Button
                 android:layout_marginTop="30dp"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_width="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:id="@+id/button_time"
@@ -42,7 +42,7 @@
                 android:layout_marginTop="25dp"
                 android:background="@drawable/exer_start_button"
                 android:text="START"
-                android:textColor="@color/design_default_color_background"
+                android:textColor="#2A0A63"
                 android:textSize="20sp"
                 android:layout_marginLeft="0dp"
                 android:textStyle="bold"/>
@@ -80,9 +80,11 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#EFDEDE"
+                        android:background="@drawable/steps_shape"
                         android:text="@string/exercisei6"
                         android:textColor="@color/black"
+                        android:paddingLeft="7dp"
+                        android:paddingBottom="5dp"
                         android:textSize="19sp"/>
 
                 </LinearLayout>

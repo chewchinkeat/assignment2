@@ -5,15 +5,19 @@
 
         <shape android:shape="rectangle">
 
-            <stroke android:color="#F60215"
-                android:width="10dp"/>
+            <stroke android:color="#FB83AC"
+                android:width="5dp"/>
 
-            <solid android:color="#E6E156"/>
+            <gradient
+                android:startColor="#FDD14B"
+                android:centerColor="#FFFBD5"
+                android:endColor="#FBD359"
+                android:angle="0"/>
 
             <corners android:radius="5dp"/>
 
-            <size android:width="145dp"
-                android:height="65dp"/>
+            <size android:width="105dp"
+                android:height="35dp"/>
 
 
         </shape>
