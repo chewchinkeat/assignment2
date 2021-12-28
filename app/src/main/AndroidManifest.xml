@@ -9,6 +9,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment2">
+        <service
+            android:name=".GettingDeviceTokenService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+
+            </intent-filter>
+
+        </service>
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+
+            </intent-filter>
+        </service>
+
         <activity
             android:name=".NutritionDetailsActivity"
             android:exported="false" />

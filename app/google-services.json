@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "471732775148",
+    "project_id": "fitex-48753",
+    "storage_bucket": "fitex-48753.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471732775148:android:a51f3916d4403277efddc9",
+        "android_client_info": {
+          "package_name": "com.example.assignment2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "471732775148-mcdc6rf5e3nkgmcrapq0qabos3nkkt2l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBebqS3PwwaMPcAKYD8lu12nIZo7abe5xQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "471732775148-mcdc6rf5e3nkgmcrapq0qabos3nkkt2l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
