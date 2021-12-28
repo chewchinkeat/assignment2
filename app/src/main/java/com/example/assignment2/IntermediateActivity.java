@@ -18,15 +18,15 @@ public class IntermediateActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_beginner);
+        setContentView(R.layout.activity_intermediate);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         newArray = new int[]{
 
-                R.id.exercise1_pose, R.id.exercise2_pose,R.id.exercise3_pose,R.id.exercise4_pose,R.id.exercise5_pose,R.id.exercise6_pose,
-                R.id.exercise7_pose,R.id.exercise8_pose,R.id.exercise9_pose,R.id.exercise10_pose,R.id.exercise11_pose,R.id.exercise12_pose,
+                R.id.exercisei1_pose, R.id.exercisei2_pose,R.id.exercisei3_pose,R.id.exercisei4_pose,R.id.exercisei5_pose,R.id.exercisei6_pose,
+                R.id.exercisei7_pose,R.id.exercisei8_pose,R.id.exercisei9_pose,R.id.exercisei10_pose,R.id.exercisei11_pose,R.id.exercisei12_pose,
 
         };
     }

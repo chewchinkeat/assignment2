@@ -20,7 +20,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="220dp"
-                android:src="@drawable/exercise4"/>
+                android:src="@drawable/exercisei4"/>
 
             <Button
                 android:layout_marginTop="30dp"
@@ -81,7 +81,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#EFDEDE"
-                        android:text="@string/exercise4"
+                        android:text="@string/exercisei4"
                         android:textColor="@color/black"
                         android:textSize="19sp"/>
 

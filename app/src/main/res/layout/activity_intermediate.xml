@@ -49,7 +49,7 @@
 
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise1_pose"
+                        android:id="@+id/exercisei1_pose"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -68,7 +68,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="monospace"
-                                android:text="Jumping Jack"
+                                android:text="1 Arm 1 Leg Plank"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
                                 android:textSize="15dp"
@@ -105,7 +105,7 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/exercise1"
+                                android:src="@drawable/exercisei1"
                                 />
 
 
@@ -150,7 +150,7 @@
 
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise2_pose"
+                        android:id="@+id/exercisei2_pose"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -169,7 +169,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="monospace"
-                                android:text="cardio sit trek"
+                                android:text="Bicycle Crunches"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
                                 android:textSize="15dp"
@@ -206,109 +206,7 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/exercise2"
-                                />
-
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:layout_weight="0"
-                            >
-                            <ImageView
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-                                />
-
-
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
-
-                    <TableRow
-                        android:layout_width="fill_parent"
-                        android:layout_height="1dp"
-                        android:background="#ffaaa9a9"/>
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    >
-
-                    <LinearLayout
-                        android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise3_pose"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10.0dp"
-                        android:orientation="horizontal"
-                        >
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:layout_weight="1.0"
-                            android:orientation="vertical"
-                            >
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="monospace"
-                                android:text="knee push-ups"
-                                android:textAllCaps="true"
-                                android:textColor="#ff000000"
-                                android:textSize="15dp"
-                                android:textStyle="bold"
-                                />
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Repeat 2 Time"
-                                android:textStyle="bold"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="01: 00 MIN"
-                                android:textColor="#ffff5722"
-                                android:textStyle="bold"
-                                />
-
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-
-                            >
-
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/exercise3"
+                                android:src="@drawable/exercisei2"
                                 />
 
 
@@ -354,7 +252,7 @@
 
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise4_pose"
+                        android:id="@+id/exercisei3_pose"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -373,7 +271,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="monospace"
-                                android:text="alternating superman"
+                                android:text="Supine Bridge"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
                                 android:textSize="15dp"
@@ -410,7 +308,109 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/exercise4"
+                                android:src="@drawable/exercisei3"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="0"
+                            >
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                                />
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffaaa9a9"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:onClick="Imagebuttonclicked"
+                        android:id="@+id/exercisei4_pose"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10.0dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Jumping Lunges"
+                                android:textAllCaps="true"
+                                android:textColor="#ff000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Repeat 2 Time"
+                                android:textStyle="bold"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="01: 00 MIN"
+                                android:textColor="#ffff5722"
+                                android:textStyle="bold"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+
+                            >
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/exercisei4"
                                 />
 
 
@@ -457,7 +457,7 @@
 
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise5_pose"
+                        android:id="@+id/exercisei5_pose"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -476,7 +476,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="monospace"
-                                android:text="knee raises"
+                                android:text="Side Plank Leg Raise"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
                                 android:textSize="15dp"
@@ -512,7 +512,7 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/exercise5"
+                                android:src="@drawable/exercisei5"
                                 />
 
 
@@ -558,7 +558,7 @@
 
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise6_pose"
+                        android:id="@+id/exercisei6_pose"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -577,7 +577,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="monospace"
-                                android:text="mountain climbers"
+                                android:text="Leg Raise"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
                                 android:textSize="15dp"
@@ -614,212 +614,7 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/exercise6"
-                                />
-
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:layout_weight="0"
-                            >
-                            <ImageView
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-                                />
-
-
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
-
-                    <TableRow
-                        android:layout_width="fill_parent"
-                        android:layout_height="1dp"
-                        android:background="#ffaaa9a9"/>
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    >
-
-                    <LinearLayout
-                        android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise7_pose"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10.0dp"
-                        android:orientation="horizontal"
-                        >
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:layout_weight="1.0"
-                            android:orientation="vertical"
-                            >
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="monospace"
-                                android:text="Heel Touches"
-                                android:textAllCaps="true"
-                                android:textColor="#ff000000"
-                                android:textSize="15dp"
-                                android:textStyle="bold"
-                                />
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Repeat 2 Time"
-                                android:textStyle="bold"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="01: 00 MIN"
-                                android:textColor="#ffff5722"
-                                android:textStyle="bold"
-                                />
-
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-
-                            >
-
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/exercise7"
-                                />
-
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:layout_weight="0"
-                            >
-                            <ImageView
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="5dp"
-                                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
-                                />
-
-
-
-                        </LinearLayout>
-
-
-                    </LinearLayout>
-
-
-                    <TableRow
-                        android:layout_width="fill_parent"
-                        android:layout_height="1dp"
-                        android:background="#ffaaa9a9"/>
-
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="100.0dp"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    >
-
-                    <LinearLayout
-                        android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise8_pose"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10.0dp"
-                        android:orientation="horizontal"
-                        >
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:layout_weight="1.0"
-                            android:orientation="vertical"
-                            >
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="monospace"
-                                android:text="plank"
-                                android:textAllCaps="true"
-                                android:textColor="#ff000000"
-                                android:textSize="15dp"
-                                android:textStyle="bold"
-                                />
-
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Repeat 2 Time"
-                                android:textStyle="bold"
-                                />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="01: 00 MIN"
-                                android:textColor="#ffff5722"
-                                android:textStyle="bold"
-                                />
-
-
-                        </LinearLayout>
-
-
-                        <LinearLayout
-                            android:layout_width="fill_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-
-                            >
-
-                            <pl.droidsonroids.gif.GifImageView
-                                android:layout_width="fill_parent"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/exercise8"
+                                android:src="@drawable/exercisei6"
                                 />
 
 
@@ -866,7 +661,7 @@
 
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise9_pose"
+                        android:id="@+id/exercisei7_pose"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -885,7 +680,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="monospace"
-                                android:text="Side plank"
+                                android:text="Flutter Kicks"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
                                 android:textSize="15dp"
@@ -922,7 +717,7 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/exercise9"
+                                android:src="@drawable/exercisei7"
                                 />
 
 
@@ -968,7 +763,7 @@
 
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise10_pose"
+                        android:id="@+id/exercisei8_pose"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -987,7 +782,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="monospace"
-                                android:text="lunges"
+                                android:text="V Ups"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
                                 android:textSize="15dp"
@@ -1024,7 +819,110 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/exercise10"
+                                android:src="@drawable/exercisei8"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="0"
+                            >
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                                />
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffaaa9a9"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:onClick="Imagebuttonclicked"
+                        android:id="@+id/exercisei9_pose"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10.0dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Plank With Alternating Leg Lift"
+                                android:textAllCaps="true"
+                                android:textColor="#ff000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Repeat 2 Time"
+                                android:textStyle="bold"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="01: 00 MIN"
+                                android:textColor="#ffff5722"
+                                android:textStyle="bold"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+
+                            >
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/exercisei9"
                                 />
 
 
@@ -1070,7 +968,7 @@
 
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise11_pose"
+                        android:id="@+id/exercisei10_pose"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -1089,7 +987,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="monospace"
-                                android:text="side squat"
+                                android:text="Side Plank Rotation"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
                                 android:textSize="15dp"
@@ -1126,7 +1024,7 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/exercise11"
+                                android:src="@drawable/exercisei10"
                                 />
 
 
@@ -1172,7 +1070,7 @@
 
                     <LinearLayout
                         android:onClick="Imagebuttonclicked"
-                        android:id="@+id/exercise12_pose"
+                        android:id="@+id/exercisei11_pose"
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10.0dp"
@@ -1191,7 +1089,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="monospace"
-                                android:text="Running"
+                                android:text="Side Plank Twist"
                                 android:textAllCaps="true"
                                 android:textColor="#ff000000"
                                 android:textSize="15dp"
@@ -1228,7 +1126,109 @@
                             <pl.droidsonroids.gif.GifImageView
                                 android:layout_width="fill_parent"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/exercise12"
+                                android:src="@drawable/exercisei11"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_weight="0"
+                            >
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                                />
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="1dp"
+                        android:background="#ffaaa9a9"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100.0dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:onClick="Imagebuttonclicked"
+                        android:id="@+id/exercisei12_pose"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10.0dp"
+                        android:orientation="horizontal"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="monospace"
+                                android:text="Burpee"
+                                android:textAllCaps="true"
+                                android:textColor="#ff000000"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Repeat 2 Time"
+                                android:textStyle="bold"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="01: 00 MIN"
+                                android:textColor="#ffff5722"
+                                android:textStyle="bold"
+                                />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+
+                            >
+
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/exercisei12"
                                 />
 
 
