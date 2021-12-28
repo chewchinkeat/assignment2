@@ -26,5 +26,10 @@
         android:id="@+id/share"
         android:orderInCategory="1"
         />
+    <item
+        android:title="Log Out"
+        android:id="@+id/logout"
+        android:orderInCategory="6"
+        />
 
 </menu>

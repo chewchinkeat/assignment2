@@ -17,6 +17,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
     Button buttonBeginner, buttonIntermediate;
@@ -109,6 +111,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+
+        if(id == R.id.logout){
+
+            FirebaseAuth.getInstance().signOut();
+            Intent intToMain = new Intent(MainActivity.this, SignUp.class);
+            startActivity(intToMain);
+        }
+
         return true;
     }
 

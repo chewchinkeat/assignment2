@@ -29,7 +29,7 @@ public class Intro extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                startActivity(new Intent(getApplicationContext(), SignUp.class));
                 finish();
             }
         }, 3500);
