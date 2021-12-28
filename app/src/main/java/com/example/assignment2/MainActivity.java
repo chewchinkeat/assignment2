@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -60,22 +61,52 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if(id == R.id.share){
+
+            Intent myIntent = new Intent(Intent.ACTION_SEND);
+            myIntent.setType("text/plain");
+            String sharebody = "This app is best. " + "https://play.google.com/store/apps/details?id=com.example.assignment2&hl=en";
+            String sharehub = "FitEx App";
+            myIntent.putExtra(Intent.EXTRA_SUBJECT, sharehub);
+            myIntent.putExtra(Intent.EXTRA_TEXT, sharebody);
+            startActivity(Intent.createChooser(myIntent, "Share using"));
+
             return true;
         }
 
         if(id == R.id.rate){
+
+            try{
+
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + getPackageName())));
+
+
+            }catch(Exception ex){
+
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + getPackageName())));
+
+            }
+
             return true;
         }
 
         if(id == R.id.moreapps){
+
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/developer?id=Mobilious+Limited"));
+            startActivity(intent);
             return true;
         }
 
         if(id == R.id.term){
+
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+            startActivity(intent);
             return true;
         }
 
         if(id == R.id.privacy){
+
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(""));
+            startActivity(intent);
             return true;
         }
         return true;
