@@ -68,16 +68,25 @@
         <entry key="..\:/Users/User/Documents/GitHub/assignment3/app/src/main/res/layout/activity_login.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/User/Documents/GitHub/assignment3/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/User/Documents/GitHub/assignment3/app/src/main/res/layout/activity_nutrition.xml" value="0.1265625" />
+        <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable-anydpi/ic_action_BMIcalculator.xml" value="0.20677083333333332" />
+        <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable-hdpi/buttonbackground.xml" value="0.3828125" />
+        <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable-hdpi/malefemale.xml" value="0.3828125" />
+        <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable-hdpi/malefemalenotfocus.xml" value="0.3828125" />
+        <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable-hdpi/plusminus.xml" value="0.3828125" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable/btn_shape.xml" value="0.21041666666666667" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable/crop_background.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable/customborder.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable/exer_start_button.xml" value="0.21041666666666667" />
+        <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable/heightandbackground.xml" value="0.3828125" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20677083333333332" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable/round_button.xml" value="0.2140625" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable/steps_shape.xml" value="0.21041666666666667" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/drawable/toolbar_color.xml" value="0.21041666666666667" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/layout/activity_beginner.xml" value="0.19791666666666666" />
+        <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/layout/activity_bmi.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/layout/activity_bmicalculator.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/layout/activity_exercise1.xml" value="0.33" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/layout/activity_exercise10.xml" value="0.33" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/layout/activity_exercise11.xml" value="0.33" />
@@ -109,7 +118,9 @@
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/layout/activity_main.xml" value="0.19791666666666666" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/layout/activity_nutrition.xml" value="0.190625" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/layout/activity_nutrition_details.xml" value="0.190625" />
+        <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/layout/activity_sign_up.xml" value="0.190625" />
         <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/layout/rows.xml" value="0.190625" />
+        <entry key="..\:/Users/renyi/OneDrive/Documents/Chong Renyi/Year 2 Sem 1/Programming 2/Assignment 2/assignment2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.20677083333333332" />
         <entry key="..\:/um courses/year 2 sem 1/KIE1008 PROGRAMMING II/assignment/assignment2/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>

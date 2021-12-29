@@ -1,57 +1,167 @@
 package com.example.assignment2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.SeekBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class BMICalculator extends AppCompatActivity {
 
-    EditText weight,height;
-    TextView resulttext;
-    String calculation, BMIResult;
+    Button mcalculatebmi;
+
+    TextView mcurrentheight;
+    TextView mcurrentage,mcurrentweight;
+    ImageView mincrementage,mincrementweight,mdecrementage,mdecrementweight;
+    SeekBar mseekbarforheight;
+    RelativeLayout mmale,mfemale;
+
+    int intweight = 50;
+    int intage = 25;
+    int currentprogress;
+    String mintprogress = "170";
+    String typeofuser = "0";
+    String weight2 = "50";
+    String age2 = "25";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmicalculator);
-        weight = findViewById(R.id.weight);
-        height = findViewById(R.id.height);
-        resulttext = findViewById(R.id.result);}
 
+        mcalculatebmi= findViewById(R.id.calculatebmi);
+        mcurrentage= findViewById(R.id.currentage);
+        mcurrentweight = findViewById(R.id.currentweight);
+        mcurrentheight = findViewById(R.id.currentheight);
+        mincrementage = findViewById(R.id.incrementage);
+        mincrementweight = findViewById(R.id.incrementweight);
+        mdecrementage = findViewById(R.id.decrementage);
+        mdecrementweight = findViewById(R.id.decrementweight);
+        mseekbarforheight = findViewById((R.id.seekbarforheight));
+        mmale = findViewById(R.id.male);
+        mfemale = findViewById(R.id.female);
 
-
-    public void calculateBMI(View view) {
-            String w1 = weight.getText().toString();
-            String h1 = height.getText().toString();
-
-            float weightValue = Float.parseFloat(w1);
-            float heightValue = Float.parseFloat(h1) /100;
-
-            float bmi = weightValue / (heightValue * heightValue);
-
-            if(bmi < 16){
-                BMIResult = "You are severely Under Weight !";
+        mmale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mmale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.malefemale));
+                mfemale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.malefemalenotfocus));
+                typeofuser="Male";
             }
-            else if(bmi < 18.5){
-                BMIResult = "You are Under Weight !";
+        });
+
+        mfemale.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mfemale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.malefemale));
+                mmale.setBackground(ContextCompat.getDrawable(getApplicationContext(),R.drawable.malefemalenotfocus));
+                typeofuser="Female";
             }
-            else if(bmi >= 18.5 && bmi <= 24.9){
-                BMIResult = "You have Normal Weight";
-            }
-            else if(bmi >= 18.5 && bmi <= 24.9){
-                BMIResult = "You are OverWeight !";
-            }
-            else {
-                BMIResult = "You are Obese !";
+        });
+
+        mseekbarforheight.setMax(300);
+        mseekbarforheight.setProgress(170);
+        mseekbarforheight.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                currentprogress=progress;
+                mintprogress = String.valueOf(currentprogress);
+                mcurrentheight.setText(mintprogress);
             }
 
-            calculation = "Result:\n\n" + String.format("%.2f",bmi) + "\n" + BMIResult;
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
+
+        mincrementage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intage += 1;
+                age2 = String.valueOf(intage);
+                mcurrentage.setText(age2);
+            }
+        });
+
+        mdecrementage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intage -= 1;
+                age2 = String.valueOf(intage);
+                mcurrentage.setText(age2);
+            }
+        });
+
+        mincrementweight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intweight += 1;
+                weight2 = String.valueOf(intweight);
+                mcurrentweight.setText(weight2);
+            }
+        });
+
+        mdecrementweight.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intweight -= 1;
+                weight2 = String.valueOf(intweight);
+                mcurrentweight.setText(weight2);
+            }
+        });
 
 
-            resulttext.setText(calculation);
-        }
 
+        mcalculatebmi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(typeofuser.equals("0"))
+                {
+                    Toast.makeText(getApplicationContext(),"Please select your gender",Toast.LENGTH_SHORT).show();
+
+                }
+                else if(mintprogress.equals("0"))
+                {
+                    Toast.makeText(getApplicationContext(),"Please select your height",Toast.LENGTH_SHORT).show();
+                }
+                else if(intage==0 || intage<0)
+                {
+                    Toast.makeText(getApplicationContext(),"Age is incorrect",Toast.LENGTH_SHORT).show();
+                }
+                else if(intweight==0 || intweight<0)
+                {
+                    Toast.makeText(getApplicationContext(),"Weight is incorrect",Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    Intent intent = new Intent(BMICalculator.this,BmiActivity.class);
+                    intent.putExtra("gender",typeofuser);
+                    intent.putExtra("height",mintprogress);
+                    intent.putExtra("weight",weight2);
+                    intent.putExtra("age",age2);
+
+                    startActivity(intent);
+                }
+
+
+            }
+        });
+    }
 }
