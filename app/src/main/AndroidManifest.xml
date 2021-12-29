@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment2">
         <activity
+            android:name=".BMICalculator"
+            android:exported="false" />
+        <activity
             android:name=".SignUp"
             android:exported="false" />
         <activity

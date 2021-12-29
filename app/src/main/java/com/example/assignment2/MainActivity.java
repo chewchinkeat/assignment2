@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -23,10 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
     Button buttonBeginner, buttonIntermediate;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -138,6 +143,12 @@ public class MainActivity extends AppCompatActivity {
     public void nutrition(View view) {
 
         Intent intent = new Intent(MainActivity.this, NutritionActivity.class);
+        startActivity(intent);
+    }
+
+
+    public void bmi(View view) {
+        Intent intent = new Intent(MainActivity.this, BMICalculator.class);
         startActivity(intent);
     }
 }

@@ -22,6 +22,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="15dp"
         android:scrollbars="none"
         >
         <LinearLayout
@@ -183,8 +184,7 @@
                             android:padding="8dp"
                             android:text="Every day 15 minutes"
                             android:textColor="#052667"
-                            android:textStyle="bold"
-                            />
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -199,7 +199,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:src="@drawable/intermediate_icon"/>
-                            //Part 3 need change pic
+
 
 
 
@@ -274,6 +274,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Suggestions for free"
+                            android:textColor="#052667"
                             android:padding="8dp"
                             android:textStyle="bold"/>
 
@@ -307,16 +308,80 @@
             </LinearLayout>
 
             <LinearLayout
+                android:onClick="bmi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_margin="10dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/crop_background"
+                android:orientation="vertical"
 
-                <FrameLayout
+                >
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/adPlaceHolder"/>
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="monospace"
+                            android:padding="8dp"
+                            android:text="BMI Calculator"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:text="Check your BMI for free"
+                            android:textColor="#052667"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/bmi" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+                    </LinearLayout>
+                </LinearLayout>
             </LinearLayout>
+
+
+
 
         </LinearLayout>
     </ScrollView>
