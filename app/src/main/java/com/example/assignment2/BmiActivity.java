@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.CharacterPickerDialog;
@@ -63,37 +64,31 @@ public class BmiActivity extends AppCompatActivity {
         {
             mbmicategory.setText("You are severe thinness");
             mbackground.setBackgroundColor(Color.RED);
-            mimageview.setImageResource(R.drawable.crosss);
         }
-        else if(intbmi<16.9 && intbmi>16 )
+        else if(intbmi<16.9 && intbmi>=16 )
         {
             mbmicategory.setText("You are moderate thinness");
             mbackground.setBackgroundColor(Color.RED);
-            mimageview.setImageResource(R.drawable.warning);
         }
-        else if(intbmi<18.4 && intbmi>17 )
+        else if(intbmi<18.4 && intbmi>=17 )
         {
             mbmicategory.setText("You are mild thinness");
             mbackground.setBackgroundColor(Color.RED);
-            mimageview.setImageResource(R.drawable.warning);
         }
-        else if(intbmi<25 && intbmi>18.4 )
+        else if(intbmi<25 && intbmi>=18.4 )
         {
             mbmicategory.setText("You are normal congrats");
             mbackground.setBackgroundColor(Color.YELLOW);
-            mimageview.setImageResource(R.drawable.ok);
         }
-        else if(intbmi<29.4 && intbmi>25 )
+        else if(intbmi<29.4 && intbmi>=25 )
         {
             mbmicategory.setText("You are overweight");
             mbackground.setBackgroundColor(Color.RED);
-            mimageview.setImageResource(R.drawable.warning);
         }
         else
         {
             mbmicategory.setText("You are obese");
             mbackground.setBackgroundColor(Color.RED);
-            mimageview.setImageResource(R.drawable.warning);
         }
 
         mgender.setText(intent.getStringExtra("gender"));
