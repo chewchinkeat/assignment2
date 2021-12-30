@@ -35,10 +35,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_above="@+id/heightlayout"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="35dp"
+            android:layout_gravity="center"
             android:layout_toStartOf="@+id/centerverticalline"
             android:background="@drawable/malefemalenotfocus">
 
@@ -85,10 +82,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_above="@+id/heightlayout"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="35dp"
+            android:layout_gravity="center"
             android:layout_toStartOf="@+id/centerverticalline"
             android:background="@drawable/malefemalenotfocus">
 
@@ -137,6 +131,7 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_below="@+id/heightlayout"
+            android:layout_gravity="center"
             android:layout_toStartOf="@+id/centerverticalline"
             android:background="@drawable/heightandbackground">
 
@@ -228,6 +223,7 @@
             android:layout_width="130dp"
             android:layout_height="130dp"
             android:layout_below="@+id/heightlayout"
+            android:layout_gravity="center"
             android:layout_toEndOf="@+id/centerverticalline"
             android:background="@drawable/heightandbackground">
 
@@ -321,6 +317,7 @@
             android:layout_height="150dp"
             android:layout_above="@+id/centerhorizontalline"
             android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
             android:background="@drawable/heightandbackground">
 
             <TextView
@@ -368,8 +365,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:layout_marginBottom="30dp"
                 android:progressTint="#FF4c4c"
                 android:thumbTint="@color/white">

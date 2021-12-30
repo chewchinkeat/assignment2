@@ -7,18 +7,24 @@
     android:background="@drawable/fitnessworkout"
     tools:context=".Intro">
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/appicon">
+    </ImageView>
+
     <TextView
+        android:id="@+id/intro_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/intro_name"
-        android:text="Dare to be GREAT"
-        android:textSize="30dp"
-        android:textStyle="bold"
-        android:textColor="#96E462"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="100dp">
-    </TextView>
+        android:layout_marginBottom="100dp"
+        android:text="Dare to be GREAT"
+        android:textColor="#F4F4F4"
+        android:textSize="30dp"
+        android:textStyle="bold"></TextView>
 
 
 </RelativeLayout>

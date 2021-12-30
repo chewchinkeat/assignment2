@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
             Intent myIntent = new Intent(Intent.ACTION_SEND);
             myIntent.setType("text/plain");
-            String sharebody = "This app is best. " + "https://play.google.com/store/apps/details?id=com.example.assignment2&hl=en";
+            String sharebody = "This app is the best fitness app. It's FREE! Download NOW! " + "https://play.google.com/store/apps/details?id=com.example.assignment2&hl=en";
             String sharehub = "FitEx App";
             myIntent.putExtra(Intent.EXTRA_SUBJECT, sharehub);
             myIntent.putExtra(Intent.EXTRA_TEXT, sharebody);
