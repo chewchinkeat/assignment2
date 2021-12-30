@@ -59,7 +59,7 @@
                 android:layout_alignParentBottom="true"
                 android:text="Male"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold">
 
@@ -110,7 +110,7 @@
                 android:layout_centerInParent="true"
                 android:text="Female"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold">
 
@@ -147,7 +147,7 @@
                 android:layout_marginTop="15dp"
                 android:text="Weight"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="#2B0B65"
                 android:textSize="18sp"
                 android:textStyle="bold">
 
@@ -160,7 +160,7 @@
                 android:layout_centerInParent="true"
                 android:text="50"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="#2B0B65"
                 android:textSize="30sp"
                 android:textStyle="bold">
 
@@ -208,7 +208,7 @@
 
         </RelativeLayout>
 
-</soup.neumorphism.NeumorphCardView>
+    </soup.neumorphism.NeumorphCardView>
 
     <soup.neumorphism.NeumorphCardView
         style="@style/Widget.Neumorph.Button"
@@ -238,7 +238,7 @@
                 android:layout_marginTop="15dp"
                 android:text="Age"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="#2B0B65"
                 android:textSize="18sp"
                 android:textStyle="bold">
 
@@ -251,7 +251,7 @@
                 android:layout_centerInParent="true"
                 android:text="25"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="#2B0B65"
                 android:textSize="30sp"
                 android:textStyle="bold">
 
@@ -330,7 +330,7 @@
                 android:layout_marginTop="15dp"
                 android:text="Height"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="#2B0B65"
                 android:textSize="20sp"
                 android:textStyle="bold">
 
@@ -344,7 +344,7 @@
                 android:layout_centerInParent="true"
                 android:layout_marginBottom="50dp"
                 android:text="170"
-                android:textColor="@color/white"
+                android:textColor="#2B0B65"
                 android:textSize="40sp"
                 android:textStyle="bold">
 
@@ -357,7 +357,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_toEndOf="@+id/currentheight"
                 android:text="cm"
-                android:textColor="@color/white"
+                android:textColor="#2B0B65"
                 android:textSize="20sp">
 
             </TextView>
@@ -379,6 +379,7 @@
 
         </RelativeLayout>
     </soup.neumorphism.NeumorphCardView>
+
     <Button
         android:id="@+id/calculatebmi"
         android:layout_width="match_parent"

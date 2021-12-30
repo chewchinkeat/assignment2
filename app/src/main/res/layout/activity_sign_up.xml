@@ -6,6 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".SignUp">
 
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Welcome"
+        android:textColor="#2B0B65"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:text="Let's get started"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="17dp"/>
+
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/cardviewsignupemail"
         android:layout_width="wrap_content"
