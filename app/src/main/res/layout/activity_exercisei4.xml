@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FFF">
+    android:background="#F4F2F2">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -22,6 +22,11 @@
                 android:layout_marginTop="15dp"
                 android:src="@drawable/exercisei4" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
             <Button
                 android:id="@+id/button_time"
                 android:layout_width="wrap_content"
@@ -29,12 +34,13 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/round_button"
-                android:padding="15dp"
-                android:text="01:00"
-                android:textSize="30sp" />
+                android:padding="17dp"
+                android:text="@string/_01_00"
+                android:textSize="40sp" />
 
-            <Button
+            <soup.neumorphism.NeumorphButton
                 android:id="@+id/start_button"
+                style="@style/Widget.Neumorph.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -47,25 +53,37 @@
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
-            <TextView
+            <soup.neumorphism.NeumorphCardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/steps_shape"
-                android:padding="7dp"
-                android:text="Steps To Do This"
+                android:layout_marginTop="30dp"
                 android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="25dp"
-                android:textStyle="bold" />
+                style="@style/Widget.Neumorph.Button"
+                app:neumorph_shapeType="flat">
 
-            <androidx.cardview.widget.CardView
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="7dp"
+                    android:text="Steps To Do This"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.Button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="10dp"
-                android:background="#EFDEDE"
-                app:cardCornerRadius="20dp">
+                android:background="#FAFAFA"
+                app:cardCornerRadius="20dp"
+                app:neumorph_shapeType="flat">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -74,22 +92,22 @@
                     android:layout_marginLeft="3dp"
                     android:layout_marginTop="25dp"
                     android:layout_marginEnd="5dp"
-                    android:background="#EFDEDE"
+                    android:background="#F4F2F2"
                     android:orientation="horizontal">
+
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/steps_shape"
+                        android:paddingLeft="7dp"
+                        android:paddingBottom="3dp"
                         android:text="@string/exercisei4"
                         android:textColor="@color/black"
-                        android:paddingLeft="7dp"
-                        android:paddingBottom="5dp"
                         android:textSize="19sp" />
 
                 </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+            </soup.neumorphism.NeumorphCardView>
 
 
         </LinearLayout>

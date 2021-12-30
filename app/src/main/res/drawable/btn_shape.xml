@@ -9,7 +9,7 @@
         android:startColor="#85FFF1"
         android:centerColor="@color/purple_700"
         android:centerX="10"
-        android:endColor="#000"
+        android:endColor="#FFFFFF"
         android:type="linear"
         />
 

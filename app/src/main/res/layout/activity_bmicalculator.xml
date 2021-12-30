@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1e1d1d"
+    android:background="#F4F2F2"
     tools:context=".BMICalculator">
 
    <RelativeLayout
@@ -13,90 +13,114 @@
        android:layout_centerVertical="true"
        android:id="@+id/centerhorizontalline"/>
 
-
-
-
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
         android:id="@+id/centerverticalline"/>
 
-    <RelativeLayout
-        android:id="@+id/male"
+    <soup.neumorphism.NeumorphCardView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_above="@+id/heightlayout"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="35dp"
         android:layout_toStartOf="@+id/centerverticalline"
-        android:background="@drawable/malefemalenotfocus">
+        app:neumorph_shapeType="flat">
 
-        <ImageView
-            android:layout_width="170px"
-            android:layout_height="170px"
-            android:layout_above="@+id/textmale"
-            android:layout_centerInParent="true"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/male">
+        <RelativeLayout
+            android:id="@+id/male"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/heightlayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@+id/centerverticalline"
+            android:background="@drawable/malefemalenotfocus">
 
-        </ImageView>
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@+id/textmale"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/male">
 
-        <TextView
-            android:id="@+id/textmale"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:text="Male"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold">
+            </ImageView>
 
-        </TextView>
+            <TextView
+                android:id="@+id/textmale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Male"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
 
-    </RelativeLayout>
+            </TextView>
 
-    <RelativeLayout
+        </RelativeLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_toEndOf="@id/centerverticalline"
-        android:background="@drawable/malefemalenotfocus"
         android:layout_above="@+id/heightlayout"
-        android:layout_marginBottom="35dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
         android:layout_marginRight="20dp"
-        android:id="@+id/female">
+        android:layout_marginBottom="35dp"
+        android:layout_toEndOf="@+id/centerverticalline"
+        app:neumorph_shapeType="flat">
 
-        <ImageView
-            android:layout_width="170px"
-            android:layout_height="170px"
-            android:layout_above="@+id/textfemale"
-            android:layout_centerInParent="true"
-            android:layout_marginBottom="20dp"
-            android:src="@drawable/female">
+        <RelativeLayout
+            android:id="@+id/female"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/heightlayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_toStartOf="@+id/centerverticalline"
+            android:background="@drawable/malefemalenotfocus">
 
-        </ImageView>
+            <ImageView
+                android:layout_width="170px"
+                android:layout_height="170px"
+                android:layout_above="@+id/textfemale"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/female">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"
-            android:id="@+id/textfemale"
-            android:text="Female"
-            android:layout_alignParentBottom="true"
-            android:textAlignment="center">
+            </ImageView>
 
-        </TextView>
+            <TextView
+                android:id="@+id/textfemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:text="Female"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
 
-    </RelativeLayout>
+            </TextView>
 
+        </RelativeLayout>
 
-    <RelativeLayout
-        android:id="@+id/weight"
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_below="@+id/heightlayout"
@@ -107,75 +131,87 @@
         android:layout_toStartOf="@+id/centerverticalline"
         android:background="@drawable/heightandbackground">
 
-        <TextView
-            android:id="@+id/textweight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Weight"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold">
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/currentweight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="50"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold">
-
-        </TextView>
-
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/plusminus">
+            android:id="@+id/weight"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/heightlayout"
+            android:layout_toStartOf="@+id/centerverticalline"
+            android:background="@drawable/heightandbackground">
 
-            <ImageView
-                android:id="@+id/incrementweight"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/add">
+            <TextView
+                android:id="@+id/textweight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Weight"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
 
-            </ImageView>
+            </TextView>
+
+            <TextView
+                android:id="@+id/currentweight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="50"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/plusminus">
+
+                <ImageView
+                    android:id="@+id/incrementweight"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/add">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/plusminus">
+
+                <ImageView
+                    android:id="@+id/decrementweight"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/minus">
+
+                </ImageView>
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/plusminus">
+</soup.neumorphism.NeumorphCardView>
 
-            <ImageView
-                android:id="@+id/decrementweight"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/minus">
-
-            </ImageView>
-
-        </RelativeLayout>
-
-    </RelativeLayout>
-    <RelativeLayout
-        android:id="@+id/age"
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.Button"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_below="@+id/heightlayout"
@@ -186,145 +222,167 @@
         android:layout_toEndOf="@+id/centerverticalline"
         android:background="@drawable/heightandbackground">
 
-        <TextView
-            android:id="@+id/textage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Age"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:textStyle="bold">
-
-        </TextView>
-
-        <TextView
-            android:id="@+id/currentage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="25"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:textStyle="bold">
-
-        </TextView>
-
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/plusminus">
+            android:id="@+id/age"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/heightlayout"
+            android:layout_toEndOf="@+id/centerverticalline"
+            android:background="@drawable/heightandbackground">
 
-            <ImageView
-                android:id="@+id/incrementage"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/add">
+            <TextView
+                android:id="@+id/textage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Age"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold">
 
-            </ImageView>
+            </TextView>
+
+            <TextView
+                android:id="@+id/currentage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="25"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/plusminus">
+
+                <ImageView
+                    android:id="@+id/incrementage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/add">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/plusminus">
+
+                <ImageView
+                    android:id="@+id/decrementage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/minus">
+
+                </ImageView>
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/plusminus">
+    </soup.neumorphism.NeumorphCardView>
 
-            <ImageView
-                android:id="@+id/decrementage"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/minus">
+    <soup.neumorphism.NeumorphCardView
 
-            </ImageView>
-
-        </RelativeLayout>
-
-    </RelativeLayout>
-
-
-    <RelativeLayout
         android:id="@+id/heightlayout"
+        style="@style/Widget.Neumorph.Button"
         android:layout_width="340dp"
         android:layout_height="150dp"
         android:layout_above="@+id/centerhorizontalline"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
+        android:layout_marginBottom="-50dp"
         android:background="@drawable/heightandbackground"
-        android:layout_marginBottom="-50dp">
+        app:neumorph_shapeType="flat">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="Height"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold">
+        <RelativeLayout
 
-        </TextView>
+            android:layout_width="340dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/centerhorizontalline"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/heightandbackground">
 
-        <TextView
-            android:id="@+id/currentheight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:layout_marginBottom="50dp"
-            android:text="170"
-            android:textColor="@color/white"
-            android:textSize="40sp"
-            android:textStyle="bold">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:text="Height"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold">
 
-        </TextView>
+            </TextView>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="20dp"
-            android:layout_toEndOf="@+id/currentheight"
-            android:text="cm"
-            android:textColor="@color/white"
-            android:textSize="20sp">
+            <TextView
+                android:id="@+id/currentheight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="50dp"
+                android:text="170"
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                android:textStyle="bold">
 
-        </TextView>
+            </TextView>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_toEndOf="@+id/currentheight"
+                android:text="cm"
+                android:textColor="@color/white"
+                android:textSize="20sp">
 
-        <SeekBar
-            android:id="@+id/seekbarforheight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="20dp"
-            android:thumbTint="@color/white"
-            android:progressTint="#FF4c4c">
-
-        </SeekBar>
+            </TextView>
 
 
-    </RelativeLayout>
+            <SeekBar
+                android:id="@+id/seekbarforheight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:progressTint="#FF4c4c"
+                android:thumbTint="@color/white">
 
+            </SeekBar>
+
+
+        </RelativeLayout>
+    </soup.neumorphism.NeumorphCardView>
     <Button
         android:id="@+id/calculatebmi"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
