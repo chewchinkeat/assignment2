@@ -1,5 +1,6 @@
 package com.example.assignment2;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,20 +10,28 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.method.CharacterPickerDialog;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class BmiActivity extends AppCompatActivity {
 
-    android.widget.Button mrecalculatebmi;
-
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://fitex-48753-default-rtdb.firebaseio.com/");
     TextView mbmidisplay,mbmicategory,mgender;
     Intent intent;
     ImageView mimageview;
     String mbmi;
     float intbmi;
+    int counter = 0;
 
     String height;
     String weight;
@@ -44,7 +53,6 @@ public class BmiActivity extends AppCompatActivity {
         mgender = findViewById(R.id.genderdisplay);
         mbackground = findViewById(R.id.contentlayout);
         mimageview = findViewById(R.id.imageView);
-        mrecalculatebmi= findViewById(R.id.recalculatebmi);
 
 
 
@@ -59,6 +67,23 @@ public class BmiActivity extends AppCompatActivity {
         intbmi = intweight/(intheight*intheight);
 
         mbmi=Float.toString(intbmi);
+
+
+        String username = getIntent().getStringExtra("user3");
+
+        databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                databaseReference.child("users").child(username).child("bmi").setValue(mbmi);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
 
         if(intbmi<16)
         {
@@ -93,16 +118,6 @@ public class BmiActivity extends AppCompatActivity {
 
         mgender.setText(intent.getStringExtra("gender"));
         mbmidisplay.setText(mbmi);
-
-
-
-        mrecalculatebmi.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(BmiActivity.this,BMICalculator.class);
-                startActivity(intent);
-
-            }
-        });
+        
     }
 }

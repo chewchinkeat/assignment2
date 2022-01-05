@@ -151,12 +151,13 @@ public class BMICalculator extends AppCompatActivity {
                 }
                 else
                 {
+                    String t = getIntent().getStringExtra("user2");
                     Intent intent = new Intent(BMICalculator.this,BmiActivity.class);
                     intent.putExtra("gender",typeofuser);
                     intent.putExtra("height",mintprogress);
                     intent.putExtra("weight",weight2);
                     intent.putExtra("age",age2);
-
+                    intent.putExtra("user3", t);
                     startActivity(intent);
                 }
 

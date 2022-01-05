@@ -60,7 +60,6 @@ public class SignUp extends AppCompatActivity {
                                 Toast.makeText(SignUp.this, "This username is already registered", Toast.LENGTH_SHORT).show();
                             }else{
                                 // send data to database
-
                                 databaseReference.child("users").child(usernameTxt).child("password").setValue(passwordTxt);
 
                                 Toast.makeText(SignUp.this, "Registration successful", Toast.LENGTH_SHORT).show();
@@ -86,6 +85,8 @@ public class SignUp extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
 
     }
 }

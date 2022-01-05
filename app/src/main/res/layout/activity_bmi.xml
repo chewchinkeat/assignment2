@@ -80,21 +80,4 @@
     </soup.neumorphism.NeumorphCardView>
 
 
-    <android.widget.Button
-        android:id="@+id/recalculatebmi"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_below="@+id/showbmi"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="15dp"
-        android:background="@drawable/buttonbackground"
-        android:text="Recalculate"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        android:textStyle="bold">
-
-    </android.widget.Button>
-
 </RelativeLayout>

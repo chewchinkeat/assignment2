@@ -148,7 +148,9 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void bmi(View view) {
+        String s = getIntent().getStringExtra("user");
         Intent intent = new Intent(MainActivity.this, BMICalculator.class);
+        intent.putExtra("user2", s);
         startActivity(intent);
     }
 }
