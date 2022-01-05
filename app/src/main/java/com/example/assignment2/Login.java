@@ -16,87 +16,79 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class Login extends AppCompatActivity {
 
-    EditText emailid, password;
-    Button signinbtn;
-    TextView tvSignUp;
-    FirebaseAuth mFirebaseAuth;
-    private FirebaseAuth.AuthStateListener mAuthStateListener;
+    EditText username, password;
+    Button loginBtn;
+    TextView registerNowBtn;
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://fitex-48753-default-rtdb.firebaseio.com/");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mFirebaseAuth = FirebaseAuth.getInstance();
-        emailid = findViewById(R.id.editTextTextEmailAddress);
+        username = findViewById(R.id.editTextTextUsername);
         password = findViewById(R.id.editTextTextPassword);
-        signinbtn = findViewById(R.id.button);
-        tvSignUp = findViewById(R.id.textView);
+        loginBtn = findViewById(R.id.button);
+        registerNowBtn = findViewById(R.id.textView);
 
-        mAuthStateListener = new FirebaseAuth.AuthStateListener() {
 
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-
-                FirebaseUser mFirebaseUser = mFirebaseAuth.getCurrentUser();
-                if (mFirebaseUser != null) {
-                    Toast.makeText(Login.this, "Login successfully!", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(Login.this, MainActivity.class);
-                    startActivity(intent);
-                } else {
-                    Toast.makeText(Login.this, "Please login", Toast.LENGTH_SHORT).show();
-                }
-
-            }
-        };
-
-        signinbtn.setOnClickListener(new View.OnClickListener() {
+        loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email = emailid.getText().toString();
-                String passw = password.getText().toString();
-                if (email.isEmpty()) {
-                    emailid.setError("Please enter your email");
-                    emailid.requestFocus();
-                } else if (passw.isEmpty()) {
-                    password.setError("Please enter your password");
-                    password.requestFocus();
-                } else if (email.isEmpty() && passw.isEmpty()) {
-                    Toast.makeText(Login.this, "The fields are empty!", Toast.LENGTH_SHORT).show();
-                } else if (!(email.isEmpty() && passw.isEmpty())) {
-                    mFirebaseAuth.signInWithEmailAndPassword(email, passw).addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
+                final String usernameTxt = username.getText().toString();
+                final String PasswordTxt = password.getText().toString();
+
+                if(usernameTxt.isEmpty() || PasswordTxt.isEmpty()){
+                    Toast.makeText(Login.this, "Please enter your username or password", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if (!task.isSuccessful()) {
-                                Toast.makeText(Login.this, "Please login again", Toast.LENGTH_SHORT).show();
-                            } else {
-                                Intent intToHome = new Intent(Login.this, MainActivity.class);
-                                startActivity(intToHome);
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            //check if username is exist in firebase
+                            if(snapshot.hasChild(usernameTxt)){
+                                //get password and match with entered password
+
+                                final String getPassword = snapshot.child(usernameTxt).child("password").getValue(String.class);
+
+                                if(getPassword.equals(PasswordTxt)){
+                                    Toast.makeText(Login.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
+                                    //open MainActivity
+                                    startActivity(new Intent(Login.this, MainActivity.class));
+                                    finish();
+                                }else{
+                                    Toast.makeText(Login.this, "Incorrect password", Toast.LENGTH_SHORT).show();
+                                }
+                            }else{
+                                Toast.makeText(Login.this,"Incorrect username", Toast.LENGTH_SHORT).show();
                             }
                         }
-                    });
-                } else {
-                    Toast.makeText(Login.this, "Error has occurred!", Toast.LENGTH_SHORT).show();
 
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+                    });
                 }
             }
         });
 
-        tvSignUp.setOnClickListener(new View.OnClickListener() {
+        registerNowBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intSignUp = new Intent(Login.this, MainActivity.class);
+                Intent intSignUp = new Intent(Login.this, SignUp.class);
                 startActivity(intSignUp);
             }
         });
     }
 
-    @Override
-    protected void onStart(){
-        super.onStart();
-        mFirebaseAuth.addAuthStateListener(mAuthStateListener);
-    }
 }

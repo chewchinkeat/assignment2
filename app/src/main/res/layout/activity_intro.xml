@@ -24,7 +24,9 @@
         android:text="Dare to be GREAT"
         android:textColor="#F4F4F4"
         android:textSize="30dp"
-        android:textStyle="bold"></TextView>
+        android:textStyle="bold">
+
+    </TextView>
 
 
 </RelativeLayout>

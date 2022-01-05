@@ -1,69 +1,85 @@
 package com.example.assignment2;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class SignUp extends AppCompatActivity {
-    EditText emailid, password;
-    Button signupbtn;
-    TextView tvSignIn;
-    FirebaseAuth mFirebaseAuth;
+    EditText username, password;
+    Button registerBtn;
+    TextView loginNowBtn;
+
+    //creating object to access realtime database
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReferenceFromUrl("https://fitex-48753-default-rtdb.firebaseio.com/");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        mFirebaseAuth = FirebaseAuth.getInstance();
-        emailid = findViewById(R.id.editTextTextEmailAddress);
+        username = findViewById(R.id.editTextTextUsername);
         password = findViewById(R.id.editTextTextPassword);
-        signupbtn = findViewById(R.id.button);
-        tvSignIn = findViewById(R.id.textView);
-        signupbtn.setOnClickListener(new View.OnClickListener() {
+        registerBtn = findViewById(R.id.button);
+        loginNowBtn = findViewById(R.id.textView2);
+
+        registerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email = emailid.getText().toString();
-                String passw = password.getText().toString();
-                if(email.isEmpty()){
-                    emailid.setError("Please enter your email");
-                    emailid.requestFocus();
-                }else if(passw.isEmpty()){
-                    password.setError("Please enter your password");
-                    password.requestFocus();
-                }else if(email.isEmpty() && passw.isEmpty()){
-                    Toast.makeText(SignUp.this, "The fields are empty!",Toast.LENGTH_SHORT).show();
-                }else if(!(email.isEmpty() && passw.isEmpty())){
-                    mFirebaseAuth.createUserWithEmailAndPassword(email,passw).addOnCompleteListener(SignUp.this, new OnCompleteListener<AuthResult>() {
+                //get data from Edittext
+                final String usernameTxt = username.getText().toString();
+                final String passwordTxt = password.getText().toString();
+
+                //Ensure user fill in all the data
+                if(usernameTxt.isEmpty() || passwordTxt.isEmpty()){
+                    Toast.makeText(SignUp.this, "Please fill in all the fields", Toast.LENGTH_SHORT).show();
+                }else{
+
+                    databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
                         @Override
-                        public void onComplete(@NonNull Task<AuthResult> task) {
-                            if(!task.isSuccessful()){
-                                Toast.makeText(SignUp.this, "Sign up unsuccessful. Please try again.",Toast.LENGTH_SHORT).show();
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            //check if username is not registered before
+                            if(snapshot.hasChild(usernameTxt)){
+                                Toast.makeText(SignUp.this, "This username is already registered", Toast.LENGTH_SHORT).show();
                             }else{
-                                startActivity(new Intent(SignUp.this, MainActivity.class));
+                                // send data to database
+
+                                databaseReference.child("users").child(usernameTxt).child("password").setValue(passwordTxt);
+
+                                Toast.makeText(SignUp.this, "Registration successful", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(SignUp.this, Login.class);
+                                startActivity(intent);
                             }
                         }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
                     });
-                }else{
-                    Toast.makeText(SignUp.this, "Error has occurred!",Toast.LENGTH_SHORT).show();
 
                 }
             }
         });
 
-        tvSignIn.setOnClickListener(new View.OnClickListener() {
+        loginNowBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SignUp.this, Login.class);
