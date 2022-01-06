@@ -118,6 +118,6 @@ public class BmiActivity extends AppCompatActivity {
 
         mgender.setText(intent.getStringExtra("gender"));
         mbmidisplay.setText(mbmi);
-        
+
     }
 }
