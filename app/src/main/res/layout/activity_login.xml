@@ -112,7 +112,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/cardviewpassword"
         android:layout_centerHorizontal="true"
-
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
